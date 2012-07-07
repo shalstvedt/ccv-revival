@@ -8,6 +8,7 @@
     <ClCompile Include="..\src\nuiPipeline.cpp" />
     <ClCompile Include="..\src\nuiPluginEntity.cpp" />
     <ClCompile Include="..\src\nuiPluginManager.cpp" />
+    <ClCompile Include="..\src\nuiJsonRpcApi.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\inc\nuiDaemon.h" />
@@ -19,5 +20,6 @@
     <ClInclude Include="..\inc\nuiPluginEntity.h" />
     <ClInclude Include="..\inc\nuiPluginManager.h" />
     <ClInclude Include="..\inc\nuiStaticServices.h" />
+    <ClInclude Include="..\inc\nuiJsonRpcApi.h" />
   </ItemGroup>
 </Project>

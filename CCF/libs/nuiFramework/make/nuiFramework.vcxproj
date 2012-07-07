@@ -16,6 +16,7 @@
     <ClInclude Include="..\inc\nuiFactory.h" />
     <ClInclude Include="..\inc\nuiFramework.h" />
     <ClInclude Include="..\inc\nuiFrameworkManager.h" />
+    <ClInclude Include="..\inc\nuiJsonRpcApi.h" />
     <ClInclude Include="..\inc\nuiPipeline.h" />
     <ClInclude Include="..\inc\nuiPluginEntity.h" />
     <ClInclude Include="..\inc\nuiPluginManager.h" />
@@ -26,6 +27,7 @@
     <ClCompile Include="..\src\nuiDynamicLibrary.cpp" />
     <ClCompile Include="..\src\nuiFactory.cpp" />
     <ClCompile Include="..\src\nuiFrameworkManager.cpp" />
+    <ClCompile Include="..\src\nuiJsonRpcApi.cpp" />
     <ClCompile Include="..\src\nuiPipeline.cpp" />
     <ClCompile Include="..\src\nuiPluginEntity.cpp" />
     <ClCompile Include="..\src\nuiPluginManager.cpp" />
