@@ -1,4 +1,8 @@
-﻿Build started 7/6/2012 6:58:48 PM.
+﻿Build started 7/7/2012 12:40:22 AM.
+     1>Project "C:\Users\Kyle\Documents\GitHub\ccv-revival\build\vs2010\Community Core Fusion.vcxproj" on node 2 (clean target(s)).
+     1>_PrepareForClean:
+         Deleting file "obj\Debug\Community Core Fusion.lastbuildstate".
+     1>Done Building Project "C:\Users\Kyle\Documents\GitHub\ccv-revival\build\vs2010\Community Core Fusion.vcxproj" (clean target(s)).
 
 Build succeeded.
 
