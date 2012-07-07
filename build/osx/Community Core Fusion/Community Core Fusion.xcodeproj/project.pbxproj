@@ -13184,6 +13184,7 @@
 				6CB5E3EB15A7F38D009518A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6CB5E3F115A7F3A2009518A2 /* Build configuration list for PBXNativeTarget "nuiModule" */ = {
 			isa = XCConfigurationList;
@@ -13192,6 +13193,7 @@
 				6CB5E3F315A7F3A2009518A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6CB5E3F915A7F3AB009518A2 /* Build configuration list for PBXNativeTarget "nuiFramework" */ = {
 			isa = XCConfigurationList;
@@ -13200,6 +13202,7 @@
 				6CB5E3FB15A7F3AB009518A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6CB5E40715A7F3C8009518A2 /* Build configuration list for PBXNativeTarget "CCF" */ = {
 			isa = XCConfigurationList;
@@ -13208,6 +13211,7 @@
 				6CB5E40915A7F3C8009518A2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
