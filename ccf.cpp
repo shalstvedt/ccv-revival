@@ -48,6 +48,8 @@
 
 #include "nuiTree.h"
 
+#include "nuiJsonRpcApi.h"
+
 // assert
 #include <assert.h>
 #include "../../libs/nuiFramework/inc/nuiFrameworkManager.h"
@@ -1586,6 +1588,8 @@ int main(int argc, char **argv)
 	nuiFrameworkManager::getInstance()->initializeFrameworkManager("configs/presets/test.xml");
 //	nuiFrameworkManager::getInstance()->initializeFrameworkManager("configs/presets/module_settings.xml");
 	nuiFrameworkManager::getInstance()->workflowStart();
+
+	nuiJsonRpcApi::getInstance()->init("127.0.0.1", 7500);
 	
 	base = event_init();
 

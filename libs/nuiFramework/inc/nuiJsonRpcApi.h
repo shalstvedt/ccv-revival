@@ -70,13 +70,3 @@ private:
 	bool web_navigate_pop(const Json::Value& root, Json::Value& response);
 	bool web_save_pipeline(const Json::Value& root, Json::Value& response);
 };
-
-inline int _atoi(const char* pStr)
-{
-	int res = atoi(pStr);
-
-	if ( !str_is_zero(pStr) && (res==0) )
-		return -1;
-	else
-		return res;
-};
