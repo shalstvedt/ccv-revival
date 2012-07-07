@@ -1,0 +1,3 @@
+LIBRARY event.pyd
+EXPORTS
+initevent

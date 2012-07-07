@@ -1,0 +1,3 @@
+LIBRARY stencil_instructions.pyd
+EXPORTS
+initstencil_instructions

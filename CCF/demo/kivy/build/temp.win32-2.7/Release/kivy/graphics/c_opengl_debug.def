@@ -1,0 +1,3 @@
+LIBRARY c_opengl_debug.pyd
+EXPORTS
+initc_opengl_debug

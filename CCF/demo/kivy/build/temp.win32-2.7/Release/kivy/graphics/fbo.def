@@ -1,0 +1,3 @@
+LIBRARY fbo.pyd
+EXPORTS
+initfbo

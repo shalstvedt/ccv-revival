@@ -1,0 +1,3 @@
+LIBRARY transformation.pyd
+EXPORTS
+inittransformation
