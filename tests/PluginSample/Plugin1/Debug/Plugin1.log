@@ -1,9 +1,0 @@
-﻿Build started 7/6/2012 7:03:04 PM.
-     1>Project "C:\Users\shalstvedt\Documents\GitHub\ccv-revival\CCF\tests\PluginSample\Plugin1\Plugin1.vcxproj" on node 2 (clean target(s)).
-     1>_PrepareForClean:
-         Deleting file "Debug\Plugin1.lastbuildstate".
-     1>Done Building Project "C:\Users\shalstvedt\Documents\GitHub\ccv-revival\CCF\tests\PluginSample\Plugin1\Plugin1.vcxproj" (clean target(s)).
-
-Build succeeded.
-
-Time Elapsed 00:00:00.06
