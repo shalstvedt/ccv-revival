@@ -1583,8 +1583,8 @@ int main(int argc, char **argv)
 	nuiDaemon::init();
 	
 	nuiFrameworkManager::getInstance()->loadAddonsAtPath("addons");
-//	nuiFrameworkManager::getInstance()->initializeFrameworkManager("configs/presets/test.xml");
-	nuiFrameworkManager::getInstance()->initializeFrameworkManager("configs/presets/module_settings.xml");
+	nuiFrameworkManager::getInstance()->initializeFrameworkManager("configs/presets/test.xml");
+//	nuiFrameworkManager::getInstance()->initializeFrameworkManager("configs/presets/module_settings.xml");
 	nuiFrameworkManager::getInstance()->workflowStart();
 	
 	base = event_init();

@@ -610,7 +610,7 @@ std::string nuiModuleDescriptor::getAuthor()
     return author;
 }
 
-void nuiModuleDescriptor::setIsPipeline(bool isPipeline)
+/*void nuiModuleDescriptor::setIsPipeline(bool isPipeline)
 {
 	this->isPipeline = isPipeline;
 }
@@ -618,4 +618,4 @@ void nuiModuleDescriptor::setIsPipeline(bool isPipeline)
 bool nuiModuleDescriptor::getIsPipeline()
 {
 	return isPipeline;
-}
+} do these belong here? */

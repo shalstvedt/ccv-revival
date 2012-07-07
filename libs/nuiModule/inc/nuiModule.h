@@ -77,8 +77,8 @@ public:
 	void removeOutputEndpointDescriptor(nuiEndpointDescriptor* descriptor);
 	nuiEndpointDescriptor *getInputEndpointDescriptor(int index);
 	nuiEndpointDescriptor *getOutputEndpointDescriptor(int index);
-	void setIsPipeline(bool isPipeline);
-	bool getIsPipeline();
+	//void setIsPipeline(bool isPipeline);
+	//bool getIsPipeline(); do these belong here?
 	void setName(std::string name);
 	void setDescription(std::string description);
 	void setAuthor(std::string author);
