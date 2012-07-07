@@ -18,7 +18,7 @@ nuiLoggerMessage::nuiLoggerMessage(std::string name, std::string filename, int l
 	logmtx.lock();
 	char buffer[64];
 	time_t t;
-	struct tm *tmp;ss
+	struct tm *tmp;
 
 	if (! g_use_syslog) {
 		t = time(NULL);
@@ -39,7 +39,7 @@ nuiLoggerMessage::~nuiLoggerMessage()
 		logmtx.lock();
 #ifndef WIN32
 		if (g_use_syslog) {
-			syslog(LOG_USER | moLog::getSysLogLevel(this->level), "%s", this->os.str().c_str());
+			syslog(LOG_USER | nuiDebugLogger::getSysLogLevel(this->level), "%s", this->os.str().c_str());
 		} else {
 			std::cout << this->os.str() << std::endl;
 		}
@@ -86,7 +86,7 @@ int nuiDebugLogger::getSysLogLevel(int n)
 		case NUI_WARNING:	return LOG_WARNING;
 		case NUI_INFO:		return LOG_INFO;
 		case NUI_DEBUG:		return LOG_DEBUG;
-		case NUI_TRACE:		return LOG_TRACE;
+		//case NUI_TRACE:		return LOG_TRACE;
 		default:		return 0;
 	}
 #endif
