@@ -1,9 +1,41 @@
-﻿Build started 7/7/2012 12:40:22 AM.
-     1>Project "C:\Users\Kyle\Documents\GitHub\ccv-revival\libs\3rdParty\rtaudio\make\vs2010\rtaudio\rtaudio.vcxproj" on node 2 (clean target(s)).
-     1>_PrepareForClean:
-         Deleting file "Debug\rtaudio.lastbuildstate".
-     1>Done Building Project "C:\Users\Kyle\Documents\GitHub\ccv-revival\libs\3rdParty\rtaudio\make\vs2010\rtaudio\rtaudio.vcxproj" (clean target(s)).
+﻿Build started 7/7/2012 12:49:17 AM.
+     1>Project "C:\Users\Kyle\Documents\GitHub\ccv-revival\libs\3rdParty\rtaudio\make\vs2010\rtaudio\rtaudio.vcxproj" on node 8 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\rtaudio.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D __WINDOWS_DS__ /D WIN32 /D _DEBUG /D _LIB /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\include\asio.cpp ..\..\..\include\asiodrivers.cpp ..\..\..\include\asiolist.cpp ..\..\..\include\iasiothiscallresolver.cpp ..\..\..\RtAudio.cpp
+         RtAudio.cpp
+         iasiothiscallresolver.cpp
+         asiolist.cpp
+     1>c:\users\kyle\documents\github\ccv-revival\libs\3rdparty\rtaudio\include\asiolist.cpp(87): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>c:\users\kyle\documents\github\ccv-revival\libs\3rdparty\rtaudio\include\asiolist.cpp(89): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>c:\users\kyle\documents\github\ccv-revival\libs\3rdparty\rtaudio\include\asiolist.cpp(224): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>c:\users\kyle\documents\github\ccv-revival\libs\3rdparty\rtaudio\include\asiolist.cpp(246): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+         asiodrivers.cpp
+         asio.cpp
+     1>c:\users\kyle\documents\github\ccv-revival\libs\3rdparty\rtaudio\include\asio.cpp(76): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>c:\users\kyle\documents\github\ccv-revival\libs\3rdparty\rtaudio\include\asio.cpp(86): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>c:\users\kyle\documents\github\ccv-revival\libs\3rdparty\rtaudio\include\asio.cpp(205): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"C:\Users\Kyle\Documents\GitHub\ccv-revival\build\vs2010\\lib\rtaudio.lib" /NOLOGO Debug\asio.obj
+         Debug\asiodrivers.obj
+         Debug\asiolist.obj
+         Debug\iasiothiscallresolver.obj
+         Debug\RtAudio.obj
+         rtaudio.vcxproj -> C:\Users\Kyle\Documents\GitHub\ccv-revival\build\vs2010\\lib\rtaudio.lib
+       FinalizeBuildStatus:
+         Deleting file "Debug\rtaudio.unsuccessfulbuild".
+         Touching "Debug\rtaudio.lastbuildstate".
+     1>Done Building Project "C:\Users\Kyle\Documents\GitHub\ccv-revival\libs\3rdParty\rtaudio\make\vs2010\rtaudio\rtaudio.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.01
+Time Elapsed 00:00:03.31

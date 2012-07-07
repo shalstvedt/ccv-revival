@@ -1,9 +1,18 @@
-﻿Build started 7/7/2012 12:40:22 AM.
-     1>Project "C:\Users\Kyle\Documents\GitHub\ccv-revival\tests\DynamicLib\DynamicLib.vcxproj" on node 2 (clean target(s)).
-     1>_PrepareForClean:
-         Deleting file "Debug\DynamicLib.lastbuildstate".
-     1>Done Building Project "C:\Users\Kyle\Documents\GitHub\ccv-revival\tests\DynamicLib\DynamicLib.vcxproj" (clean target(s)).
+﻿Build started 7/7/2012 12:49:18 AM.
+     1>Project "C:\Users\Kyle\Documents\GitHub\ccv-revival\tests\DynamicLib\DynamicLib.vcxproj" on node 6 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\DynamicLib.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\libs\nuiModule\inc /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D DYNAMICLIB_EXPORTS /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\DynamicLib.dll.embed.manifest.res" Debug\DynamicLib_manifest.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Kyle\Documents\GitHub\ccv-revival\build\vs2010\Debug\DynamicLib.dll" /INCREMENTAL /NOLOGO /LIBPATH:..\..\build\vs2010\lib nuiModule.lib nuiSystem.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\DynamicLib.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Kyle\Documents\GitHub\ccv-revival\build\vs2010\Debug\DynamicLib.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Kyle\Documents\GitHub\ccv-revival\build\vs2010\Debug\DynamicLib.lib" /MACHINE:X86 /DLL Debug\DynamicLib.dll.embed.manifest.res
+         Debug\main.obj
+     1>LINK : fatal error LNK1104: cannot open file 'nuiModule.lib'
+     1>Done Building Project "C:\Users\Kyle\Documents\GitHub\ccv-revival\tests\DynamicLib\DynamicLib.vcxproj" (build target(s)) -- FAILED.
 
-Build succeeded.
+Build FAILED.
 
-Time Elapsed 00:00:00.00
+Time Elapsed 00:00:00.15

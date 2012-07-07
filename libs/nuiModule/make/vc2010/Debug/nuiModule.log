@@ -1,9 +1,31 @@
-﻿Build started 7/7/2012 12:40:22 AM.
-     1>Project "C:\Users\Kyle\Documents\GitHub\ccv-revival\libs\nuiModule\make\vc2010\nuiModule.vcxproj" on node 2 (clean target(s)).
-     1>_PrepareForClean:
-         Deleting file "Debug\nuiModule.lastbuildstate".
-     1>Done Building Project "C:\Users\Kyle\Documents\GitHub\ccv-revival\libs\nuiModule\make\vc2010\nuiModule.vcxproj" (clean target(s)).
+﻿Build started 7/7/2012 12:49:39 AM.
+     1>Project "C:\Users\Kyle\Documents\GitHub\ccv-revival\libs\nuiModule\make\vc2010\nuiModule.vcxproj" on node 3 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\nuiModule.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\inc /I..\..\..\..\libs\3rdParty\boost\ /I..\..\..\..\libs\nuiSystem\inc /I"..\..\..\..\libs\3rdParty\ptypes-2.1.1\include" /I"..\..\..\..\libs\3rdParty\ptypes-2.1.1\include\WIN32-Code\\" /I..\..\..\..\libs\3rdParty\cJSON /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\src\nuiDataPacket.cpp ..\..\src\nuiDataStream.cpp ..\..\src\nuiEndpoint.cpp ..\..\src\nuiModule.cpp ..\..\src\nuiMultimodalSyntaxTree.cpp
+         nuiMultimodalSyntaxTree.cpp
+         nuiModule.cpp
+         nuiEndpoint.cpp
+         nuiDataStream.cpp
+     1>c:\users\kyle\documents\github\ccv-revival\libs\nuimodule\src\nuidatastream.cpp(38): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\kyle\documents\github\ccv-revival\libs\nuimodule\src\nuidatastream.cpp(43): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\kyle\documents\github\ccv-revival\libs\nuimodule\src\nuidatastream.cpp(53): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+     1>c:\users\kyle\documents\github\ccv-revival\libs\nuimodule\src\nuidatastream.cpp(58): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+         nuiDataPacket.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"C:\Users\Kyle\Documents\GitHub\ccv-revival\build\vs2010\\lib\nuiModule.lib" nuiSystem.lib cJSON.lib /LIBPATH:"C:\Users\Kyle\Documents\GitHub\ccv-revival\build\vs2010\\lib" /NOLOGO Debug\nuiDataPacket.obj
+         Debug\nuiDataStream.obj
+         Debug\nuiEndpoint.obj
+         Debug\nuiModule.obj
+         Debug\nuiMultimodalSyntaxTree.obj
+         nuiModule.vcxproj -> C:\Users\Kyle\Documents\GitHub\ccv-revival\build\vs2010\\lib\nuiModule.lib
+       FinalizeBuildStatus:
+         Deleting file "Debug\nuiModule.unsuccessfulbuild".
+         Touching "Debug\nuiModule.lastbuildstate".
+     1>Done Building Project "C:\Users\Kyle\Documents\GitHub\ccv-revival\libs\nuiModule\make\vc2010\nuiModule.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.00
+Time Elapsed 00:00:03.56

@@ -1,9 +1,77 @@
-﻿Build started 7/7/2012 12:40:22 AM.
-     1>Project "C:\Users\Kyle\Documents\GitHub\ccv-revival\libs\nuiSystem\make\nuiSystem.vcxproj" on node 2 (clean target(s)).
-     1>_PrepareForClean:
-         Deleting file "Debug\nuiSystem.lastbuildstate".
-     1>Done Building Project "C:\Users\Kyle\Documents\GitHub\ccv-revival\libs\nuiSystem\make\nuiSystem.vcxproj" (clean target(s)).
+﻿Build started 7/7/2012 12:49:33 AM.
+     1>Project "C:\Users\Kyle\Documents\GitHub\ccv-revival\libs\nuiSystem\make\nuiSystem.vcxproj" on node 7 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\nuiSystem.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\..\libs\3rdParty\boost\ /I..\..\..\libs\3rdParty\cJSON /I..\inc /I"..\..\..\libs\3rdParty\ptypes-2.1.1\include" /I"..\..\..\libs\3rdParty\ptypes-2.1.1\include\WIN32-Code\\" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D NUISYSTEM_EXPORTS /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\nuiDataGenericContainer.cpp ..\src\nuiDebugLogger.cpp ..\src\nuiDefines.cpp ..\src\nuiFileSystem.cpp ..\src\nuiProperty.cpp ..\src\nuiThread.cpp ..\src\nuiTimer.cpp ..\src\nuiUtils.cpp ..\src\ofxXmlSettings.cpp ..\src\tinyxml.cpp ..\src\tinyxmlerror.cpp ..\src\tinyxmlparser.cpp
+         tinyxmlparser.cpp
+         tinyxmlerror.cpp
+         tinyxml.cpp
+         ofxXmlSettings.cpp
+     1>c:\users\kyle\documents\github\ccv-revival\libs\nuisystem\src\ofxxmlsettings.cpp(106): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\kyle\documents\github\ccv-revival\libs\nuisystem\src\ofxxmlsettings.cpp(159): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\kyle\documents\github\ccv-revival\libs\nuisystem\src\ofxxmlsettings.cpp(227): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\kyle\documents\github\ccv-revival\libs\nuisystem\src\ofxxmlsettings.cpp(287): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\kyle\documents\github\ccv-revival\libs\nuisystem\src\ofxxmlsettings.cpp(300): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\kyle\documents\github\ccv-revival\libs\nuisystem\src\ofxxmlsettings.cpp(352): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\kyle\documents\github\ccv-revival\libs\nuisystem\src\ofxxmlsettings.cpp(360): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\kyle\documents\github\ccv-revival\libs\nuisystem\src\ofxxmlsettings.cpp(374): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\kyle\documents\github\ccv-revival\libs\nuisystem\src\ofxxmlsettings.cpp(382): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\kyle\documents\github\ccv-revival\libs\nuisystem\src\ofxxmlsettings.cpp(406): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\kyle\documents\github\ccv-revival\libs\nuisystem\src\ofxxmlsettings.cpp(419): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\kyle\documents\github\ccv-revival\libs\nuisystem\src\ofxxmlsettings.cpp(444): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\kyle\documents\github\ccv-revival\libs\nuisystem\src\ofxxmlsettings.cpp(469): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\kyle\documents\github\ccv-revival\libs\nuisystem\src\ofxxmlsettings.cpp(495): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\kyle\documents\github\ccv-revival\libs\nuisystem\src\ofxxmlsettings.cpp(518): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\kyle\documents\github\ccv-revival\libs\nuisystem\src\ofxxmlsettings.cpp(559): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\kyle\documents\github\ccv-revival\libs\nuisystem\src\ofxxmlsettings.cpp(567): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\kyle\documents\github\ccv-revival\libs\nuisystem\src\ofxxmlsettings.cpp(582): warning C4018: '<' : signed/unsigned mismatch
+     1>c:\users\kyle\documents\github\ccv-revival\libs\nuisystem\src\ofxxmlsettings.cpp(629): warning C4018: '<' : signed/unsigned mismatch
+         nuiUtils.cpp
+     1>c:\users\kyle\documents\github\ccv-revival\libs\nuisystem\src\nuiutils.cpp(89): warning C4244: 'argument' : conversion from 'double' to 'unsigned int', possible loss of data
+         nuiTimer.cpp
+         nuiThread.cpp
+         nuiProperty.cpp
+     1>c:\users\kyle\documents\github\ccv-revival\libs\nuisystem\src\nuiproperty.cpp(97): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+     1>c:\users\kyle\documents\github\ccv-revival\libs\nuisystem\src\nuiproperty.cpp(104): warning C4996: '_snprintf': This function or variable may be unsafe. Consider using _snprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(363) : see declaration of '_snprintf'
+         nuiFileSystem.cpp
+     1>c:\users\kyle\documents\github\ccv-revival\libs\nuisystem\src\nuifilesystem.cpp(37): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>c:\users\kyle\documents\github\ccv-revival\libs\nuisystem\src\nuifilesystem.cpp(38): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+         nuiDefines.cpp
+         nuiDebugLogger.cpp
+         nuiDataGenericContainer.cpp
+         Generating Code...
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"C:\Users\Kyle\Documents\GitHub\ccv-revival\build\vs2010\\lib\nuiSystem.lib" ptypes.lib "libboost_filesystem-vc100-mt-gd-1_48.lib" "libboost_filesystem-vc100-mt-gd-1_48.lib" "libboost_system-vc100-mt-gd-1_48.lib" /LIBPATH:"C:\Users\Kyle\Documents\GitHub\ccv-revival\build\vs2010\\lib\\" /NOLOGO Debug\nuiDataGenericContainer.obj
+         Debug\nuiDebugLogger.obj
+         Debug\nuiDefines.obj
+         Debug\nuiFileSystem.obj
+         Debug\nuiProperty.obj
+         Debug\nuiThread.obj
+         Debug\nuiTimer.obj
+         Debug\nuiUtils.obj
+         Debug\ofxXmlSettings.obj
+         Debug\tinyxml.obj
+         Debug\tinyxmlerror.obj
+         Debug\tinyxmlparser.obj
+         nuiSystem.vcxproj -> C:\Users\Kyle\Documents\GitHub\ccv-revival\build\vs2010\\lib\nuiSystem.lib
+       FinalizeBuildStatus:
+         Deleting file "Debug\nuiSystem.unsuccessfulbuild".
+         Touching "Debug\nuiSystem.lastbuildstate".
+     1>Done Building Project "C:\Users\Kyle\Documents\GitHub\ccv-revival\libs\nuiSystem\make\nuiSystem.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.00
+Time Elapsed 00:00:06.60

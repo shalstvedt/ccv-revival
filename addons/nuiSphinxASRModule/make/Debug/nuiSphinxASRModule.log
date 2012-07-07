@@ -1,9 +1,30 @@
-﻿Build started 7/7/2012 12:40:22 AM.
-     1>Project "C:\Users\Kyle\Documents\GitHub\ccv-revival\addons\nuiSphinxASRModule\make\nuiSphinxASRModule.vcxproj" on node 2 (clean target(s)).
-     1>_PrepareForClean:
-         Deleting file "Debug\nuiSphinxASRModule.lastbuildstate".
-     1>Done Building Project "C:\Users\Kyle\Documents\GitHub\ccv-revival\addons\nuiSphinxASRModule\make\nuiSphinxASRModule.vcxproj" (clean target(s)).
+﻿Build started 7/7/2012 12:49:43 AM.
+     1>Project "C:\Users\Kyle\Documents\GitHub\ccv-revival\addons\nuiSphinxASRModule\make\nuiSphinxASRModule.vcxproj" on node 8 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\nuiSphinxASRModule.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\..\libs\3rdParty\sphinx\include\sphinxbase /I..\..\..\libs\3rdParty\sphinx\include\sphinx3 /I..\..\..\libs\3rdParty\cJSON /I..\..\..\libs\3rdParty\boost /I..\..\..\libs\nuiModule\inc /I"..\..\..\libs\3rdParty\ptypes-2.1.1\include\\" /I"..\..\..\libs\3rdParty\ptypes-2.1.1\\" /I..\src /I..\..\..\libs\nuiSystem\inc /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D NUISPHINXASRMODULE_EXPORTS /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\nuiSphinxASRModule.cpp
+         nuiSphinxASRModule.cpp
+     1>c:\users\kyle\documents\github\ccv-revival\addons\nuisphinxasrmodule\src\nuisphinxasrmodule.cpp(311): warning C4800: 'int' : forcing value to bool 'true' or 'false' (performance warning)
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\nuiSphinxASRModule.dll.embed.manifest.res" Debug\nuiSphinxASRModule_manifest.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\..\build\vs2010\bin\addons\nuiSphinxASRModule.dll" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\Kyle\Documents\GitHub\ccv-revival\build\vs2010\\lib\\" kernel32.lib user32.lib gdi32.lib winspool.lib s3decoder.lib sphinxbase.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib nuiSystem.lib nuiModule.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\nuiSphinxASRModule.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Kyle\Documents\GitHub\ccv-revival\build\vs2010\bin\addons\nuiSphinxASRModule.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\..\build\vs2010\bin\addons\nuiSphinxASRModule.lib" /MACHINE:X86 /DLL Debug\nuiSphinxASRModule.dll.embed.manifest.res
+         Debug\nuiSphinxASRModule.obj
+            Creating library ..\..\..\build\vs2010\bin\addons\nuiSphinxASRModule.lib and object ..\..\..\build\vs2010\bin\addons\nuiSphinxASRModule.exp
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\nuiSphinxASRModule.dll.embed.manifest" /manifest Debug\nuiSphinxASRModule.dll.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\nuiSphinxASRModule.dll.embed.manifest.res" Debug\nuiSphinxASRModule_manifest.rc 
+       LinkEmbedManifest:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\..\build\vs2010\bin\addons\nuiSphinxASRModule.dll" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\Kyle\Documents\GitHub\ccv-revival\build\vs2010\\lib\\" kernel32.lib user32.lib gdi32.lib winspool.lib s3decoder.lib sphinxbase.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib nuiSystem.lib nuiModule.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\nuiSphinxASRModule.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Kyle\Documents\GitHub\ccv-revival\build\vs2010\bin\addons\nuiSphinxASRModule.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\..\build\vs2010\bin\addons\nuiSphinxASRModule.lib" /MACHINE:X86 /DLL Debug\nuiSphinxASRModule.dll.embed.manifest.res
+         Debug\nuiSphinxASRModule.obj
+            Creating library ..\..\..\build\vs2010\bin\addons\nuiSphinxASRModule.lib and object ..\..\..\build\vs2010\bin\addons\nuiSphinxASRModule.exp
+         nuiSphinxASRModule.vcxproj -> C:\Users\Kyle\Documents\GitHub\ccv-revival\addons\nuiSphinxASRModule\make\..\..\..\build\vs2010\bin\addons\nuiSphinxASRModule.dll
+       FinalizeBuildStatus:
+         Deleting file "Debug\nuiSphinxASRModule.unsuccessfulbuild".
+         Touching "Debug\nuiSphinxASRModule.lastbuildstate".
+     1>Done Building Project "C:\Users\Kyle\Documents\GitHub\ccv-revival\addons\nuiSphinxASRModule\make\nuiSphinxASRModule.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.01
+Time Elapsed 00:00:01.97

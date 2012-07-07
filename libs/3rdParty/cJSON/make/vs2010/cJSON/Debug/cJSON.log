@@ -1,9 +1,35 @@
-﻿Build started 7/7/2012 12:40:23 AM.
-     1>Project "C:\Users\Kyle\Documents\GitHub\ccv-revival\libs\3rdParty\cJSON\make\vs2010\cJSON\cJSON.vcxproj" on node 2 (clean target(s)).
-     1>_PrepareForClean:
-         Deleting file "Debug\cJSON.lastbuildstate".
-     1>Done Building Project "C:\Users\Kyle\Documents\GitHub\ccv-revival\libs\3rdParty\cJSON\make\vs2010\cJSON\cJSON.vcxproj" (clean target(s)).
+﻿Build started 7/7/2012 12:49:17 AM.
+     1>Project "C:\Users\Kyle\Documents\GitHub\ccv-revival\libs\3rdParty\cJSON\make\vs2010\cJSON\cJSON.vcxproj" on node 3 (build target(s)).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(299,5): warning MSB8004: Output Directory does not end with a trailing slash.  This build instance will add the slash as it is required to allow proper evaluation of the Output Directory.
+     1>InitializeBuildStatus:
+         Creating "Debug\cJSON.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TC /analyze- /errorReport:prompt ..\..\..\cJSON.c
+         cJSON.c
+     1>c:\users\kyle\documents\github\ccv-revival\libs\3rdparty\cjson\cjson.c(122): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\kyle\documents\github\ccv-revival\libs\3rdparty\cjson\cjson.c(127): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\kyle\documents\github\ccv-revival\libs\3rdparty\cjson\cjson.c(128): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\kyle\documents\github\ccv-revival\libs\3rdparty\cjson\cjson.c(129): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>c:\users\kyle\documents\github\ccv-revival\libs\3rdparty\cjson\cjson.c(161): warning C4996: 'sscanf': This function or variable may be unsafe. Consider using sscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(325) : see declaration of 'sscanf'
+     1>c:\users\kyle\documents\github\ccv-revival\libs\3rdparty\cjson\cjson.c(347): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>c:\users\kyle\documents\github\ccv-revival\libs\3rdparty\cjson\cjson.c(435): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+     1>c:\users\kyle\documents\github\ccv-revival\libs\3rdparty\cjson\cjson.c(437): warning C4996: 'strcpy': This function or variable may be unsafe. Consider using strcpy_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 c:\program files (x86)\microsoft visual studio 10.0\vc\include\string.h(105) : see declaration of 'strcpy'
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"C:\Users\Kyle\Documents\GitHub\ccv-revival\build\vs2010\\lib\cJSON.lib" /NOLOGO Debug\cJSON.obj
+         cJSON.vcxproj -> C:\Users\Kyle\Documents\GitHub\ccv-revival\build\vs2010\\lib\cJSON.lib
+       FinalizeBuildStatus:
+         Deleting file "Debug\cJSON.unsuccessfulbuild".
+         Touching "Debug\cJSON.lastbuildstate".
+     1>Done Building Project "C:\Users\Kyle\Documents\GitHub\ccv-revival\libs\3rdParty\cJSON\make\vs2010\cJSON\cJSON.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.00
+Time Elapsed 00:00:00.35

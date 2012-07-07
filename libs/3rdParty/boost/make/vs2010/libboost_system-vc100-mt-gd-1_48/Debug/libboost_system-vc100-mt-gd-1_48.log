@@ -1,9 +1,18 @@
-﻿Build started 7/7/2012 12:40:22 AM.
-     1>Project "C:\Users\Kyle\Documents\GitHub\ccv-revival\libs\3rdParty\boost\make\vs2010\libboost_system-vc100-mt-gd-1_48\libboost_system-vc100-mt-gd-1_48.vcxproj" on node 2 (clean target(s)).
-     1>_PrepareForClean:
-         Deleting file "Debug\libboost_system-vc100-mt-gd-1_48.lastbuildstate".
-     1>Done Building Project "C:\Users\Kyle\Documents\GitHub\ccv-revival\libs\3rdParty\boost\make\vs2010\libboost_system-vc100-mt-gd-1_48\libboost_system-vc100-mt-gd-1_48.vcxproj" (clean target(s)).
+﻿Build started 7/7/2012 12:49:17 AM.
+     1>Project "C:\Users\Kyle\Documents\GitHub\ccv-revival\libs\3rdParty\boost\make\vs2010\libboost_system-vc100-mt-gd-1_48\libboost_system-vc100-mt-gd-1_48.vcxproj" on node 7 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\libboost_system-vc100-mt-gd-1_48.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\..\..\boost /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\..\..\libs\system\error_code.cpp
+         error_code.cpp
+       Lib:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\Lib.exe /OUT:"..\..\..\..\..\..\build\vs2010\lib\libboost_system-vc100-mt-gd-1_48.lib" /NOLOGO Debug\error_code.obj
+         libboost_system-vc100-mt-gd-1_48.vcxproj -> C:\Users\Kyle\Documents\GitHub\ccv-revival\libs\3rdParty\boost\make\vs2010\libboost_system-vc100-mt-gd-1_48\..\..\..\..\..\..\build\vs2010\lib\libboost_system-vc100-mt-gd-1_48.lib
+       FinalizeBuildStatus:
+         Deleting file "Debug\libboost_system-vc100-mt-gd-1_48.unsuccessfulbuild".
+         Touching "Debug\libboost_system-vc100-mt-gd-1_48.lastbuildstate".
+     1>Done Building Project "C:\Users\Kyle\Documents\GitHub\ccv-revival\libs\3rdParty\boost\make\vs2010\libboost_system-vc100-mt-gd-1_48\libboost_system-vc100-mt-gd-1_48.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.00
+Time Elapsed 00:00:02.03

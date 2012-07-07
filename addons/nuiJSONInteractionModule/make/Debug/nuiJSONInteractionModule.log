@@ -1,9 +1,29 @@
-﻿Build started 7/7/2012 12:40:22 AM.
-     1>Project "C:\Users\Kyle\Documents\GitHub\ccv-revival\addons\nuiJSONInteractionModule\make\nuiJSONInteractionModule.vcxproj" on node 2 (clean target(s)).
-     1>_PrepareForClean:
-         Deleting file "Debug\nuiJSONInteractionModule.lastbuildstate".
-     1>Done Building Project "C:\Users\Kyle\Documents\GitHub\ccv-revival\addons\nuiJSONInteractionModule\make\nuiJSONInteractionModule.vcxproj" (clean target(s)).
+﻿Build started 7/7/2012 12:49:51 AM.
+     1>Project "C:\Users\Kyle\Documents\GitHub\ccv-revival\addons\nuiJSONInteractionModule\make\nuiJSONInteractionModule.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\nuiJSONInteractionModule.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I..\..\..\libs\3rdParty\cJSON /I..\..\..\libs\3rdParty\boost /I..\..\..\libs\nuiModule\inc /I"..\..\..\libs\3rdParty\ptypes-2.1.1\include\\" /I"..\..\..\libs\3rdParty\ptypes-2.1.1\\" /I..\src /I..\..\..\libs\nuiSystem\inc /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _USRDLL /D NUIJSONINTERACTIONMODULE_EXPORTS /D _WINDLL /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt ..\src\nuiJSONInteractionModule.cpp
+         nuiJSONInteractionModule.cpp
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\nuiJSONInteractionModule.dll.embed.manifest.res" Debug\nuiJSONInteractionModule_manifest.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\..\build\vs2010\bin\addons\nuiJSONInteractionModule.dll" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\Kyle\Documents\GitHub\ccv-revival\build\vs2010\\lib\\" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib nuiSystem.lib nuiModule.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\nuiJSONInteractionModule.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Kyle\Documents\GitHub\ccv-revival\build\vs2010\bin\addons\nuiJSONInteractionModule.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\..\build\vs2010\bin\addons\nuiJSONInteractionModule.lib" /MACHINE:X86 /DLL Debug\nuiJSONInteractionModule.dll.embed.manifest.res
+         Debug\nuiJSONInteractionModule.obj
+            Creating library ..\..\..\build\vs2010\bin\addons\nuiJSONInteractionModule.lib and object ..\..\..\build\vs2010\bin\addons\nuiJSONInteractionModule.exp
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\nuiJSONInteractionModule.dll.embed.manifest" /manifest Debug\nuiJSONInteractionModule.dll.intermediate.manifest
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\nuiJSONInteractionModule.dll.embed.manifest.res" Debug\nuiJSONInteractionModule_manifest.rc 
+       LinkEmbedManifest:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"..\..\..\build\vs2010\bin\addons\nuiJSONInteractionModule.dll" /INCREMENTAL /NOLOGO /LIBPATH:"C:\Users\Kyle\Documents\GitHub\ccv-revival\build\vs2010\\lib\\" kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib nuiSystem.lib nuiModule.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\nuiJSONInteractionModule.dll.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Kyle\Documents\GitHub\ccv-revival\build\vs2010\bin\addons\nuiJSONInteractionModule.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"..\..\..\build\vs2010\bin\addons\nuiJSONInteractionModule.lib" /MACHINE:X86 /DLL Debug\nuiJSONInteractionModule.dll.embed.manifest.res
+         Debug\nuiJSONInteractionModule.obj
+            Creating library ..\..\..\build\vs2010\bin\addons\nuiJSONInteractionModule.lib and object ..\..\..\build\vs2010\bin\addons\nuiJSONInteractionModule.exp
+         nuiJSONInteractionModule.vcxproj -> C:\Users\Kyle\Documents\GitHub\ccv-revival\addons\nuiJSONInteractionModule\make\..\..\..\build\vs2010\bin\addons\nuiJSONInteractionModule.dll
+       FinalizeBuildStatus:
+         Deleting file "Debug\nuiJSONInteractionModule.unsuccessfulbuild".
+         Touching "Debug\nuiJSONInteractionModule.lastbuildstate".
+     1>Done Building Project "C:\Users\Kyle\Documents\GitHub\ccv-revival\addons\nuiJSONInteractionModule\make\nuiJSONInteractionModule.vcxproj" (build target(s)).
 
 Build succeeded.
 
-Time Elapsed 00:00:00.00
+Time Elapsed 00:00:03.96
