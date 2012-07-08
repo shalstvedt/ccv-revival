@@ -48,11 +48,11 @@
 <textarea class="textbox" id="divDataExpected"></textarea>
 
 <script>
-URL_BASE = "http://localhost:7500"; 
+URL_BASE = "http://localhost:7500/"; 
 
 //$('#status').attr("src", "green.png");
 
-$('#requests').change(function() {
+//$('#requests').change(function() {
 
 if(this.value == "null")
 { 
@@ -60,18 +60,29 @@ $('#divDataRaw').empty();
 return;
 }
 
-//if(this.value == "/workflow/quit"){
-//	if(confirm('Are you sure you want to quit?')) {continue;}else{ return;}
-//}
+if(this.value == "/workflow/quit"){
+	if(confirm('Are you sure you want to quit?')) {continue;}else{ return;}
+}
 
-  $.getJSON(URL_BASE+this.value,
+$.getJSON(URL_BASE+this.value,
   function(data) {
     $('#divDataRaw').empty();
-	$('#divDataRaw').append(''+JSON.stringify(data)+'');
-	if($('#divDataRaw').val() == "") { $('#status').attr("src", "red.png");}
-	else { $('#status').attr("src", "green.png");}
+    $('#divDataRaw').append(''+JSON.stringify(data)+'');
+    if($('#divDataRaw').val() == "") { $('#status').attr("src", "red.png");}
+    else { $('#status').attr("src", "green.png");}
    });
 });
+
+var jsonRequest = {"method": "web-list-dynamic",
+					"params": [
+								{
+								"hostername" : "blah"
+								}
+								],
+					"id" : 123
+};
+
+
 </script>
 </body>
 </html>
