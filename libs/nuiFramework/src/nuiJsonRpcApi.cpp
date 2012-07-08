@@ -27,31 +27,31 @@ bool nuiJsonRpcApi::init(std::string address, int port)
 
 	this->finished = false;
 
-	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::web_list_dynamic,std::string("web_list_dynamic")));
-	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::web_list_pipelines,std::string("web_list_pipelines")));
-	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::web_workflow_start,std::string("web_workflow_start")));
-	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::web_workflow_stop,std::string("web_workflow_stop")));
-	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::web_workflow_quit,std::string("web_workflow_quit")));
-	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::web_create_pipeline,std::string("web_create_pipeline")));
-	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::web_create_module,std::string("web_create_module")));
-	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::web_create_connection,std::string("web_create_connection")));
-	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::web_update_pipeline,std::string("web_update_pipeline")));
-	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::web_update_pipelineProperty,std::string("web_update_pipelineProperty")));
-	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::web_update_moduleProperty,std::string("web_update_moduleProperty")));
-	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::web_update_endpoint,std::string("web_update_endpoint")));
-	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::web_update_connection,std::string("web_update_connection")));
-	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::web_update_endpointCount,std::string("web_update_endpointCount")));
-	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::web_delete_pipeline,std::string("web_delete_pipeline")));
-	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::web_delete_module,std::string("web_delete_module")));
-	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::web_delete_endpoint,std::string("web_delete_endpoint")));
-	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::web_delete_connection,std::string("web_delete_connection")));
-	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::web_get_current,std::string("web_get_current")));
-	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::web_get_pipeline,std::string("web_get_pipeline")));
-	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::web_get_module,std::string("web_get_module")));
-	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::web_get_connection,std::string("web_get_connection")));
-	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::web_navigate_push,std::string("web_navigate_push")));
-	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::web_navigate_pop,std::string("web_navigate_pop")));
-	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::web_save_pipeline,std::string("web_save_pipeline")));
+	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::nui_list_dynamic,std::string("nui_list_dynamic")));
+	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::nui_list_pipelines,std::string("nui_list_pipelines")));
+	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::nui_workflow_start,std::string("nui_workflow_start")));
+	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::nui_workflow_stop,std::string("nui_workflow_stop")));
+	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::nui_workflow_quit,std::string("nui_workflow_quit")));
+	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::nui_create_pipeline,std::string("nui_create_pipeline")));
+	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::nui_create_module,std::string("nui_create_module")));
+	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::nui_create_connection,std::string("nui_create_connection")));
+	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::nui_update_pipeline,std::string("nui_update_pipeline")));
+	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::nui_update_pipelineProperty,std::string("nui_update_pipelineProperty")));
+	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::nui_update_moduleProperty,std::string("nui_update_moduleProperty")));
+	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::nui_update_endpoint,std::string("nui_update_endpoint")));
+	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::nui_update_connection,std::string("nui_update_connection")));
+	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::nui_update_endpointCount,std::string("nui_update_endpointCount")));
+	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::nui_delete_pipeline,std::string("nui_delete_pipeline")));
+	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::nui_delete_module,std::string("nui_delete_module")));
+	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::nui_delete_endpoint,std::string("nui_delete_endpoint")));
+	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::nui_delete_connection,std::string("nui_delete_connection")));
+	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::nui_get_current,std::string("nui_get_current")));
+	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::nui_get_pipeline,std::string("nui_get_pipeline")));
+	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::nui_get_module,std::string("nui_get_module")));
+	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::nui_get_connection,std::string("nui_get_connection")));
+	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::nui_navigate_push,std::string("nui_navigate_push")));
+	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::nui_navigate_pop,std::string("nui_navigate_pop")));
+	server->AddMethod(new Json::Rpc::RpcMethod<nuiJsonRpcApi>(*this, &nuiJsonRpcApi::nui_save_pipeline,std::string("nui_save_pipeline")));
 
 	return true;
 };
@@ -86,7 +86,7 @@ nuiJsonRpcApi::nuiJsonRpcApi() : pt::thread(false)
 	this->server = NULL;
 };
 
-bool nuiJsonRpcApi::web_list_dynamic( const Json::Value& root, Json::Value& response )
+bool nuiJsonRpcApi::nui_list_dynamic( const Json::Value& root, Json::Value& response )
 {
 	std::vector<std::string>* list;
 	list = nuiFrameworkManager::getInstance()->listDynamicModules();
@@ -102,7 +102,7 @@ bool nuiJsonRpcApi::web_list_dynamic( const Json::Value& root, Json::Value& resp
 	return true;
 }
 
-bool nuiJsonRpcApi::web_list_pipelines( const Json::Value& root, Json::Value& response )
+bool nuiJsonRpcApi::nui_list_pipelines( const Json::Value& root, Json::Value& response )
 {
 	std::string hosterName = root["params"]["hostername"].asString();
 
@@ -120,7 +120,7 @@ bool nuiJsonRpcApi::web_list_pipelines( const Json::Value& root, Json::Value& re
 	return true;
 }
 
-bool nuiJsonRpcApi::web_workflow_start( const Json::Value& root, Json::Value& response )
+bool nuiJsonRpcApi::nui_workflow_start( const Json::Value& root, Json::Value& response )
 {
 	nuiFrameworkManagerErrorCode error = nuiFrameworkManager::getInstance()->workflowStart();
 	if(error == NUI_FRAMEWORK_MANAGER_OK)
@@ -135,7 +135,7 @@ bool nuiJsonRpcApi::web_workflow_start( const Json::Value& root, Json::Value& re
 	}
 }
 
-bool nuiJsonRpcApi::web_workflow_stop( const Json::Value& root, Json::Value& response )
+bool nuiJsonRpcApi::nui_workflow_stop( const Json::Value& root, Json::Value& response )
 {
 	nuiFrameworkManagerErrorCode error = nuiFrameworkManager::getInstance()->workflowStop();
 	if(error == NUI_FRAMEWORK_MANAGER_OK)
@@ -150,7 +150,7 @@ bool nuiJsonRpcApi::web_workflow_stop( const Json::Value& root, Json::Value& res
 	}
 }
 
-bool nuiJsonRpcApi::web_workflow_quit( const Json::Value& root, Json::Value& response )
+bool nuiJsonRpcApi::nui_workflow_quit( const Json::Value& root, Json::Value& response )
 {
 	this->want_quit = true;
 
@@ -160,7 +160,7 @@ bool nuiJsonRpcApi::web_workflow_quit( const Json::Value& root, Json::Value& res
 
 }
 
-bool nuiJsonRpcApi::web_create_pipeline( const Json::Value& root, Json::Value& response )
+bool nuiJsonRpcApi::nui_create_pipeline( const Json::Value& root, Json::Value& response )
 {
 	std::string pipeline = root["params"]["pipeline"].asString();
 
@@ -179,7 +179,7 @@ bool nuiJsonRpcApi::web_create_pipeline( const Json::Value& root, Json::Value& r
 	}
 }
 
-bool nuiJsonRpcApi::web_create_module( const Json::Value& root, Json::Value& response )
+bool nuiJsonRpcApi::nui_create_module( const Json::Value& root, Json::Value& response )
 {
 	std::string pipeline = root["params"]["pipeline"].asString();
 	std::string module = root["params"]["module"].asString();
@@ -198,7 +198,7 @@ bool nuiJsonRpcApi::web_create_module( const Json::Value& root, Json::Value& res
 	}
 }
 
-bool nuiJsonRpcApi::web_create_connection( const Json::Value& root, Json::Value& response )
+bool nuiJsonRpcApi::nui_create_connection( const Json::Value& root, Json::Value& response )
 {
 	std::string pipeline = root["params"]["pipeline"].asString();	
 	int srcIndex = root["params"]["source"].asInt();
@@ -222,7 +222,7 @@ bool nuiJsonRpcApi::web_create_connection( const Json::Value& root, Json::Value&
 	}
 }
 
-bool nuiJsonRpcApi::web_update_pipeline( const Json::Value& root, Json::Value& response )
+bool nuiJsonRpcApi::nui_update_pipeline( const Json::Value& root, Json::Value& response )
 {
 	std::string pipeline = root["params"]["pipeline"].asString(); 
 	std::string newName = root["params"]["name"].asString();
@@ -244,7 +244,7 @@ bool nuiJsonRpcApi::web_update_pipeline( const Json::Value& root, Json::Value& r
 	}
 }
 
-bool nuiJsonRpcApi::web_update_pipelineProperty( const Json::Value& root, Json::Value& response )
+bool nuiJsonRpcApi::nui_update_pipelineProperty( const Json::Value& root, Json::Value& response )
 {
 	std::string pipeline = root["params"]["pipeline"].asString();
 	std::string key = root["params"]["key"].asString();
@@ -274,7 +274,7 @@ bool nuiJsonRpcApi::web_update_pipelineProperty( const Json::Value& root, Json::
 	}
 }
 
-bool nuiJsonRpcApi::web_update_moduleProperty( const Json::Value& root, Json::Value& response )
+bool nuiJsonRpcApi::nui_update_moduleProperty( const Json::Value& root, Json::Value& response )
 {
 	std::string pipeline = root["params"]["pipeline"].asString();
 	std::string key = root["params"]["key"].asString();
@@ -305,7 +305,7 @@ bool nuiJsonRpcApi::web_update_moduleProperty( const Json::Value& root, Json::Va
 	}
 }
 
-bool nuiJsonRpcApi::web_update_endpoint( const Json::Value& root, Json::Value& response )
+bool nuiJsonRpcApi::nui_update_endpoint( const Json::Value& root, Json::Value& response )
 {
 	std::string pipeline = root["params"]["pipeline"].asString(); 
 	std::string type = root["params"]["type"].asString();
@@ -352,7 +352,7 @@ bool nuiJsonRpcApi::web_update_endpoint( const Json::Value& root, Json::Value& r
 	}
 }
 
-bool nuiJsonRpcApi::web_update_connection( const Json::Value& root, Json::Value& response )
+bool nuiJsonRpcApi::nui_update_connection( const Json::Value& root, Json::Value& response )
 {
 	std::string pipeline = root["params"]["pipeline"].asString(); 
 	int srcIndex = root["params"]["source"].asInt(); 
@@ -392,7 +392,7 @@ bool nuiJsonRpcApi::web_update_connection( const Json::Value& root, Json::Value&
 	}
 }
 
-bool nuiJsonRpcApi::web_update_endpointCount( const Json::Value& root, Json::Value& response )
+bool nuiJsonRpcApi::nui_update_endpointCount( const Json::Value& root, Json::Value& response )
 {
 	std::string pipeline = root["params"]["pipeline"].asString(); 
 	std::string type = root["params"]["type"].asString(); 
@@ -433,7 +433,7 @@ bool nuiJsonRpcApi::web_update_endpointCount( const Json::Value& root, Json::Val
 	}
 }
 
-bool nuiJsonRpcApi::web_delete_pipeline( const Json::Value& root, Json::Value& response )
+bool nuiJsonRpcApi::nui_delete_pipeline( const Json::Value& root, Json::Value& response )
 {
 	std::string pipeline = root["params"]["pipeline"].asString();
 	nuiFrameworkManagerErrorCode error = 
@@ -450,7 +450,7 @@ bool nuiJsonRpcApi::web_delete_pipeline( const Json::Value& root, Json::Value& r
 	}
 }
 
-bool nuiJsonRpcApi::web_delete_module( const Json::Value& root, Json::Value& response )
+bool nuiJsonRpcApi::nui_delete_module( const Json::Value& root, Json::Value& response )
 {
 	std::string pipeline = root["params"]["pipeline"].asString();
 	int index = root["params"]["moduleId"].asInt();
@@ -471,7 +471,7 @@ bool nuiJsonRpcApi::web_delete_module( const Json::Value& root, Json::Value& res
 	}
 }
 
-bool nuiJsonRpcApi::web_delete_endpoint( const Json::Value& root, Json::Value& response )
+bool nuiJsonRpcApi::nui_delete_endpoint( const Json::Value& root, Json::Value& response )
 {
 	std::string pipeline = root["params"]["pipeline"].asString();
 	std::string type = root["params"]["type"].asString();
@@ -500,7 +500,7 @@ bool nuiJsonRpcApi::web_delete_endpoint( const Json::Value& root, Json::Value& r
 	}
 }
 
-bool nuiJsonRpcApi::web_delete_connection( const Json::Value& root, Json::Value& response )
+bool nuiJsonRpcApi::nui_delete_connection( const Json::Value& root, Json::Value& response )
 {
 	std::string pipeline = root["params"]["pipeline"].asString(); 
 	int srcIndex = root["params"]["source"].asInt(); 
@@ -523,7 +523,7 @@ bool nuiJsonRpcApi::web_delete_connection( const Json::Value& root, Json::Value&
 	}
 }
 
-bool nuiJsonRpcApi::web_get_current( const Json::Value& root, Json::Value& response )
+bool nuiJsonRpcApi::nui_get_current( const Json::Value& root, Json::Value& response )
 {
 	nuiModuleDescriptor* descriptor = nuiFrameworkManager::getInstance()->getCurrentPipeline();
 	if(descriptor == NULL)
@@ -539,7 +539,7 @@ bool nuiJsonRpcApi::web_get_current( const Json::Value& root, Json::Value& respo
 	}
 }
 
-bool nuiJsonRpcApi::web_get_pipeline( const Json::Value& root, Json::Value& response )
+bool nuiJsonRpcApi::nui_get_pipeline( const Json::Value& root, Json::Value& response )
 {
 	std::string pipeline = root["params"]["pipeline"].asString(); 
     nuiModuleDescriptor* descriptor = nuiFrameworkManager::getInstance()->getPipeline(pipeline);
@@ -556,7 +556,7 @@ bool nuiJsonRpcApi::web_get_pipeline( const Json::Value& root, Json::Value& resp
 	}
 }
 
-bool nuiJsonRpcApi::web_get_module( const Json::Value& root, Json::Value& response )
+bool nuiJsonRpcApi::nui_get_module( const Json::Value& root, Json::Value& response )
 {
 	std::string pipeline = root["params"]["pipeline"].asString();
 	int index = root["params"]["moduleId"].asInt();
@@ -574,7 +574,7 @@ bool nuiJsonRpcApi::web_get_module( const Json::Value& root, Json::Value& respon
 	}
 }
 
-bool nuiJsonRpcApi::web_get_connection( const Json::Value& root, Json::Value& response )
+bool nuiJsonRpcApi::nui_get_connection( const Json::Value& root, Json::Value& response )
 {
 	std::string pipeline = root["params"]["pipeline"].asString(); 
 	int srcIndex = root["params"]["source"].asInt(); 
@@ -598,7 +598,7 @@ bool nuiJsonRpcApi::web_get_connection( const Json::Value& root, Json::Value& re
 	}
 }
 
-bool nuiJsonRpcApi::web_navigate_push( const Json::Value& root, Json::Value& response )
+bool nuiJsonRpcApi::nui_navigate_push( const Json::Value& root, Json::Value& response )
 {
 	int index = root["params"]["index"].asInt();
 	
@@ -618,7 +618,7 @@ bool nuiJsonRpcApi::web_navigate_push( const Json::Value& root, Json::Value& res
 	}
 }
 
-bool nuiJsonRpcApi::web_navigate_pop( const Json::Value& root, Json::Value& response )
+bool nuiJsonRpcApi::nui_navigate_pop( const Json::Value& root, Json::Value& response )
 {
 	nuiModuleDescriptor* descriptor = nuiFrameworkManager::getInstance()->navigatePop();
 
@@ -635,7 +635,7 @@ bool nuiJsonRpcApi::web_navigate_pop( const Json::Value& root, Json::Value& resp
 	}
 }
 
-bool nuiJsonRpcApi::web_save_pipeline( const Json::Value& root, Json::Value& response )
+bool nuiJsonRpcApi::nui_save_pipeline( const Json::Value& root, Json::Value& response )
 {
 	// TODO : ? still needed ?
 	return true;

@@ -69,6 +69,7 @@ static struct event_base *base = NULL;
 static bool config_syslog = false;
 static std::string config_guidir = NUI_GUIDIR;
 static nuiJsonRpcApi *server = NULL;
+static evhttp *httpserver;
 int g_config_delay = 20;
 
 bool want_quit_soon = false;
@@ -262,11 +263,40 @@ int main(int argc, char **argv)
 
 	server = nuiJsonRpcApi::getInstance();
 
+	httpserver = evhttp_new(NULL);
+	
+	if ( httpserver == NULL ) 
+    {
+		LOG(NUI_CRITICAL, "unable to create http server");
+		goto exit_critical;
+	}
+
+
+    int ret = evhttp_bind_socket(httpserver, "127.0.0.1", 7501);
+	if ( ret == -1 ) 
+    {
+		perror("HTTP server");
+		LOG(NUI_ERROR, "unable to open socket for 127.0.0.1:7501");
+
+        goto exit_critical;
+    }
+    else
+	    LOG(NUI_INFO, "Http server running at http://127.0.0.1:7501/");
+   
+    //SET EVENTS
+    evhttp_set_cb(httpserver, "/", web_index, NULL);
+ 	evhttp_set_gencb(httpserver, web_file, NULL);
+
+
 	server->startApi();
 
-	while(server->isFinished() == false) {
-		SLEEP(1000);
-	}
+do
+    {
+		// if we're running the server, allow the event loop to have control for a while
+		if ( server != NULL )
+			event_base_loop(base, EVLOOP_ONCE|EVLOOP_NONBLOCK);
+			SLEEP(g_config_delay);
+	} while ( server->isFinished() == false );
 
 	nuiFrameworkManager::getInstance()->workflowStop();
 	nuiFrameworkManager::getInstance()->workflowQuit();

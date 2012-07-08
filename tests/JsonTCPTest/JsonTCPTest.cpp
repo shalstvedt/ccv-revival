@@ -31,11 +31,11 @@ int main(int argc, char **argv) {
 	/* build JSON-RPC query */
 	query["jsonrpc"] = "2.0";
 	query["id"] = 1;
-	query["method"] = "web_navigate_push";
+	query["method"] = "nui_workflow_quit";
 
-	params["index"] = 3;
+	//params["index"] = 3;
 
-	query["params"] = params;
+	//query["params"] = params;
 
 	queryStr = writer.write(query);
 	std::cout << "Query is: " << queryStr << std::endl;
