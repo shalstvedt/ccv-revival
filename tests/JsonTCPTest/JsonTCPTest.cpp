@@ -7,6 +7,7 @@ int main(int argc, char **argv) {
 
 	Json::Rpc::TcpClient tcpClient(std::string("127.0.0.1"), 7500);
 	Json::Value query;
+	Json::Value params;
 	Json::FastWriter writer;
 	std::string queryStr;
 	std::string responseStr;
@@ -30,7 +31,11 @@ int main(int argc, char **argv) {
 	/* build JSON-RPC query */
 	query["jsonrpc"] = "2.0";
 	query["id"] = 1;
-	query["method"] = "web_list_dynamic";
+	query["method"] = "web_navigate_push";
+
+	params["index"] = 3;
+
+	query["params"] = params;
 
 	queryStr = writer.write(query);
 	std::cout << "Query is: " << queryStr << std::endl;
