@@ -10,13 +10,6 @@
 #include "nuiDataStream.h"
 #include "nuiEndpoint.h"
 
-inline bool str_is_zero(const char* pStr);
-
-//! returns 0 - MAX_INT integer in case of success, -1 in case of failure
-//! had to write own implementation because std atoi converts in 1..MAX_INT 
-//! range
-inline int _atoi(const char* pStr);
-
 //! TODO : optional arguments methods
 class nuiJsonRpcApi : public pt::thread
 {

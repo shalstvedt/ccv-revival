@@ -13,6 +13,9 @@
   <ItemGroup>
     <ClCompile Include="..\..\ccf.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\ccf.h" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectGuid>{6EFD0DFD-EF69-4D51-B1BE-8F6D0AF5B6A7}</ProjectGuid>
     <RootNamespace>CommunityCoreFusion</RootNamespace>
