@@ -1,4 +1,8 @@
+var host = '127.0.0.1';
+var port = 7500;
+
 function connect(host, port) {
+	$('#status').attr("src", "grey.png");
 	tcpClient = new TcpClient(host, port);
 	tcpClient.connect(function() {
 	  tcpClient.addResponseListener(function(data) {
@@ -11,11 +15,10 @@ function connect(host, port) {
 }
 
 $(document).ready(function () {
-	var host = '127.0.0.1';
-	var port = 7500;
 	connect(host, port);
 
 	$('#requests').change(function() {
+		$('#divDataSent').empty();
 		if(this.value == "null")
 		{
 			$('#divDataRaw').empty(); 
@@ -26,12 +29,18 @@ $(document).ready(function () {
 		}
 		var jsonRequest = {"jsonrpc": "2.0", 
 			"method": this.value,
-			"id" : 123
+			"id" : 123,
+			"params" : {"pipeline" : "root",
+						"module" : "nuiAudioOutputModule",
+						"moduleId" : 1}
 		};
 		var stringreq = JSON.stringify(jsonRequest);
-		tcpClient.sendMessage(stringreq, function() {$('#status').attr("src", "orange.png");});
+		$('#divDataSent').append(stringreq);
+		tcpClient.sendMessage(stringreq, function() {$('#divDataRaw').empty(); $('#status').attr("src", "orange.png");});
 	});
 });
+
+$('#reload').click(function(){connect(host, port);})
 
 /*
 

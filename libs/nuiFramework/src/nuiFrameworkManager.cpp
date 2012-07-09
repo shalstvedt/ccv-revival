@@ -30,6 +30,13 @@ nuiFrameworkManagerErrorCode nuiFrameworkManager::initializeFrameworkManager(con
 {
 	nuiFrameworkManagerErrorCode returnCode = loadSettingsFromXml(fileName);
     this->rootPipeline = (nuiPipelineModule*)(nuiFactory::getInstance()->create("root"));
+	if(rootPipeline != NULL) {
+		nuiTreeNode<int, nuiModule*> *temp = new nuiTreeNode<int, nuiModule*>(rootPipeline->property("id").asInteger(), rootPipeline);
+		for (int i=0; i<rootPipeline->getChildModuleCount(); i++) {
+			temp->addChildNode(new nuiTreeNode<int, nuiModule*>(rootPipeline->getChildModuleAtIndex(i)->property("id").asInteger(), rootPipeline->getChildModuleAtIndex(i)));
+		}
+		dataObjectTree = new nuiTree<int, nuiModule*>(temp);
+	}
 	return (rootPipeline != NULL) ? NUI_FRAMEWORK_MANAGER_OK : NUI_FRAMEWORK_ROOT_INITIALIZATION_FAILED;
 }
 
@@ -257,7 +264,7 @@ nuiFrameworkManagerErrorCode nuiFrameworkManager::loadSettingsFromXml(ofxXmlSett
         nuiModuleDescriptor* descr = nuiFactory::getInstance()->pipelineDescriptors[iter->first];
         int k = descr->getDataStreamDescriptorCount();
 	}
-	nuiFrameworkManagerErrorCode isGraphCorrect = NUI_FRAMEWORK_MANAGER_OK;// checkPipelineGraphForLoop(pipelineDescriptionsMap);
+	nuiFrameworkManagerErrorCode isGraphCorrect = NUI_FRAMEWORK_MANAGER_OK;// checkPipelineGraphForLoop(pipelineDescriptionsMap); todo
 	return isGraphCorrect ? NUI_FRAMEWORK_MANAGER_OK : NUI_FRAMEWORK_PIPELINE_STRUCTURE_LOOP;
 }
 

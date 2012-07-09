@@ -40,6 +40,22 @@ int main(int argc, char **argv)
 	server = nuiJsonRpcApi::getInstance();
 	server->startApi();
 
+	nuiTreeNode<int, int>* node = new nuiTreeNode<int, int>(0,0);
+	node->addChildNode(new nuiTreeNode<int, int>(1,1));
+	node->addChildNode(new nuiTreeNode<int, int>(2,2));
+	node->addChildNode(new nuiTreeNode<int, int>(3,3));
+	node->getChild(1)->addChildNode(new nuiTreeNode<int, int>(4,4));
+	node->getChild(1)->addChildNode(new nuiTreeNode<int, int>(5,5));
+	node->getChild(3)->addChildNode(new nuiTreeNode<int, int>(6,6));
+	node->getChild(3)->addChildNode(new nuiTreeNode<int, int>(7,7));
+	nuiTree<int,int>* tree = new nuiTree<int,int>(node);
+
+	for (nuiTree<int,int>::iterator iter = tree->begin();iter!=tree->end();iter++)
+	{
+		printf("%i ", (*(iter))->getKey());
+	}
+
+
 do
     {
 		SLEEP(g_config_delay);

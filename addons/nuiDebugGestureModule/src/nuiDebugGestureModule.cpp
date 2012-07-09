@@ -103,5 +103,6 @@ void nuiDebugGestureModule::update() {
 }
 
 void nuiDebugGestureModule::start() {
+	LOG(NUI_DEBUG, "passing through");
     nuiModule::start();
 }

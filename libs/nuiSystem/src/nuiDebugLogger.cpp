@@ -10,7 +10,7 @@
 
 static pt::mutex(logmtx);
 
-int g_loglevel = NUI_INFO;
+int g_loglevel = NUI_TRACE;
 bool g_use_syslog = false;
 
 nuiLoggerMessage::nuiLoggerMessage(std::string name, std::string filename, int line, int level) 
@@ -56,7 +56,7 @@ void nuiDebugLogger::init(bool use_syslog)
 #ifndef WIN32
 	g_use_syslog = use_syslog;
 #endif
-	g_loglevel = NUI_INFO;
+	g_loglevel = NUI_TRACE;
 	if (getenv("NUI_DEBUG"))
 		g_loglevel = NUI_DEBUG;
 	if (getenv("NUI_TRACE"))

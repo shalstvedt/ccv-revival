@@ -11,6 +11,7 @@
 <body>
 
 <h2>Fusion API Tests - <small>Status: </small><img id="status" src="grey.png"/></h2>
+<button id="reload">Reconnect</button>
 <div id="results"></div>
 <label>Request:</label>
 <select id="requests">
@@ -19,39 +20,39 @@
   <option value="nui_list_dynamic">/list/dynamic</option>
   <option value="nui_list_pipelines">/list/pipelines</option>
   <option value="null">---- Create -----</option>
-  <option value="/create/pipeline?pipeline=pipelineName">/create/pipeline</option>
-  <option value="/create/module?pipeline=pipelineName&module=audioModule">/create/module</option>
-  <option value="/create/connection?pipeline=pipelineName&source=1&sourcePort=0&destination=3&destinationPort=0">/create/connection</option>
+  <option value="nui_create_pipeline">/create/pipeline</option>
+  <option value="nui_create_module">/create/module</option>
+  <option value="nui_create_connection">/create/connection</option>
   <option value="null">---- Update -----</option>
-  <option value="/update/pipeline?pipeline=pipelineName&name=newName&description=newDescription">/update/pipeline</option>
-  <option value="/update/pipelineProperty?pipeline=pipelineName&key=isAsync&value=0&description=property" disabled>/update/pipelineProperty</option>
-  <option value="/update/moduleProperty?pipeline=pipelineName&module=3&key=isAsync&value=0" disabled>/update/moduleProperty</option>  
-  <option value="/update/endpoint?type=input&index=3&newDescriptor=”video”&newIndex=2">/update/endpoint</option> 
-  <option value="/update/connection?pipeline=pipelineName&source=1&sourcePort=0&destination=3&destinationPort=0&deepCopy=0&asyncMode=0">/update/connection</option>
-  <option value="/update/endpointCount?pipeline=pipeline1type=input&count=1">/update/endpointCount</option>
+  <option value="nui_update_pipeline">/update/pipeline</option>
+  <option value="nui_update_pipelineProperty" disabled>/update/pipelineProperty</option>
+  <option value="nui_update_moduleProperty" disabled>/update/moduleProperty</option>  
+  <option value="nui_update_endpoint">/update/endpoint</option> 
+  <option value="nui_update_connection">/update/connection</option>
+  <option value="nui_update_endpointCount">/update/endpointCount</option>
   <option value="null">---- Delete -----</option>
-  <option value="/delete/pipeline?pipeline=pipelineName">/delete/pipeline</option>
-  <option value="/delete/module?pipeline=pipelineName&moduleId=3">/delete/module</option>
-  <option value="/delete/endpoint?pipeline=pipelineName&type=output&index=3">/delete/endpoint</option>
-  <option value="/delete/connection?pipeline=pipelineName&source=1&sourcePort=0&destination=0&destinationPort=0">/delete/connection</option>  
+  <option value="nui_delete_pipeline">/delete/pipeline</option>
+  <option value="nui_delete_module">/delete/module</option>
+  <option value="nui_delete_endpoint">/delete/endpoint</option>
+  <option value="nui_delete_connection">/delete/connection</option>  
   <option value="null">---- Get -----</option>
-  <option value="/get/pipeline?pipeline=pipelineName">/get/pipeline</option>
-  <option value="/get/module?pipeline=pipelineName&module=1">/get/module</option>  
-  <option value="/get/connection?pipeline=pipelineName&connectionIndex=4">/get/connection</option>
+  <option value="nui_get_current">/get/current</option>
+  <option value="nui_get_pipeline">/get/pipeline</option>
+  <option value="nui_get_module">/get/module</option>  
+  <option value="nui_get_connection">/get/connection</option>
   <option value="null">---- Save -----</option>
-  <option value="/save/pipeline?pipeline=root&file=test.xml&download=1">/save/pipeline</option>  
+  <option value="nui_save_pipeline">/save/pipeline</option>  
   <option value="null">---- Workflow -----</option>
-  <option value="/workflow/start">/workflow/start</option>
-  <option value="/workflow/stop">/workflow/stop</option>
+  <option value="nui_workflow_start">/workflow/start</option>
+  <option value="nui_workflow_stop">/workflow/stop</option>
   <option value="nui_workflow_quit">/workflow/quit</option>
 </select>
 <p></p>
-
+<label>Request:</label>
+<textarea class="textbox" id="divDataSent"></textarea>
+<p></p>
 <label>Repsonse:</label>
 <textarea class="textbox" id="divDataRaw"></textarea>
-<p></p>
-<label>Expected:</label>
-<textarea class="textbox" id="divDataExpected"></textarea>
 
 <script src="scripts/tcp-client.js"></script>
 <script src="scripts/ansi-converter.js"></script>
