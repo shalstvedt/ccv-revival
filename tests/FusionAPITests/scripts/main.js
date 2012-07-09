@@ -29,7 +29,7 @@ $(document).ready(function () {
 			"id" : 123
 		};
 		var stringreq = JSON.stringify(jsonRequest);
-		tcpClient.sendMessage(stringreq, function() {$('#status').attr("src", "red.png");});
+		tcpClient.sendMessage(stringreq, function() {$('#status').attr("src", "orange.png");});
 	});
 });
 
