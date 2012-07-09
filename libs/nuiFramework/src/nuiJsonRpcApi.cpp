@@ -103,23 +103,6 @@ bool nuiJsonRpcApi::nui_list_dynamic( const Json::Value& root, Json::Value& resp
 	return true;
 }
 
-/*bool nuiJsonRpcApi::nui_list_active_modules( const Json::Value& root, Json::Value& response )
-{
-	response["id"] = root["id"];
-	std::vector<std::string>* list;
-	list = nuiFrameworkManager::getInstance()->listDynamicModules();
-
-	Json::Value* jModules = new Json::Value();
-	std::vector<std::string>::iterator it;
-	for(it = list->begin() ; it!=list->end();it++)
-		jModules->append(*it);
-
-	setSuccess(response);
-	response["list"] = *jModules;
-	
-	return true;
-}*/
-
 bool nuiJsonRpcApi::nui_list_pipelines( const Json::Value& root, Json::Value& response )
 {
 	response["id"] = root["id"];
@@ -264,8 +247,12 @@ bool nuiJsonRpcApi::nui_update_pipeline( const Json::Value& root, Json::Value& r
 	}
 	else
 	{
+		if(newName != "") descr->setName(newName);
+		descr->setAuthor(newAuthor);
+		descr->setDescription(newDescription);
+		nuiModuleDescriptor* res = nuiFrameworkManager::getInstance()->updatePipeline(pipeline, descr);
 		setSuccess(response);
-		response["descriptor"] = serialize_pipeline(descr);
+		response["descriptor"] = serialize_pipeline(res);
 		return true;
 	}
 }
