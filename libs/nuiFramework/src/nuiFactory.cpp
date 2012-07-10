@@ -147,7 +147,7 @@ nuiModule *nuiFactory::createPipeline(nuiModuleDescriptor* descriptor)
 	pipeline->setName(descriptor->getName());
 	pipeline->setDescription(descriptor->getDescription());
 	pipeline->setAuthor(descriptor->getAuthor());
-	pipeline->property("id") = new nuiProperty(PIPELINE_ID);
+	pipeline->property("id") = new nuiProperty(nuiUtils::getRandomNumber());
 	for (int i=0;i<descriptor->getChildModulesCount();i++)
 	{
 		nuiModuleDescriptor* childDescriptor = descriptor->getChildModuleDescriptor(i);
@@ -260,6 +260,7 @@ nuiModule *nuiFactory::createPipeline(nuiModuleDescriptor* descriptor)
 	printf("---------------\n");
 
 	loadSettings(pipeline, descriptor);
+	pipelineDescriptors[descriptor->getName()] = descriptor;
 	return pipeline;
 }
 

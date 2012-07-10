@@ -7,37 +7,48 @@ function connect(host, port) {
 	tcpClient.connect(function() {
 	  tcpClient.addResponseListener(function(data) {
 		$('#divDataRaw').empty();
-		$('#divDataRaw').append(data);
+		$('#divDataRaw').text(data);
 		if($('#divDataRaw').val() == "") { $('#status').attr("src", "red.png");}
 		else { $('#status').attr("src", "green.png");}
 		});
 	});
 }
 
+function updateJSON() {
+	$('#divDataSent').empty();
+	if(this.value == "null")
+	{
+		$('#divDataRaw').empty(); 
+		return;
+	}
+	if(this.value == "/workflow/quit"){
+		if(!confirm('Are you sure you want to quit?')) {return;}
+	}
+	var jsonRequest = {"jsonrpc": "2.0", 
+		"method": document.getElementById("requests").value,
+		"id" : 123,
+		"params" : JSON.parse(document.getElementById("params").value)
+	};
+	var stringreq = JSON.stringify(jsonRequest);
+	$('#divDataSent').append(stringreq);
+}
+
+
 $(document).ready(function () {
 	connect(host, port);
 
-	$('#requests').change(function() {
-		$('#divDataSent').empty();
-		if(this.value == "null")
-		{
-			$('#divDataRaw').empty(); 
-			return;
-		}
-		if(this.value == "/workflow/quit"){
-			if(!confirm('Are you sure you want to quit?')) {return;}
-		}
-		var jsonRequest = {"jsonrpc": "2.0", 
-			"method": this.value,
-			"id" : 123,
-			"params" : {"pipeline" : "root",
-						"module" : "nuiAudioOutputModule",
-						"moduleId" : 1}
-		};
-		var stringreq = JSON.stringify(jsonRequest);
-		$('#divDataSent').append(stringreq);
-		tcpClient.sendMessage(stringreq, function() {$('#divDataRaw').empty(); $('#status').attr("src", "orange.png");});
+	$('#send').click(function() {
+		tcpClient.sendMessage(document.getElementById("divDataSent").value, function() {$('#divDataRaw').empty(); $('#status').attr("src", "orange.png");});
 	});
+	$('#requests').change(updateJSON);
+	var content = $('#requests').val();
+
+    $('#params').keyup(function() { 
+        if ($('#params').val() != content) {
+            content = $('#params').val();
+			updateJSON();
+        }
+    });
 });
 
 $('#reload').click(function(){connect(host, port);})

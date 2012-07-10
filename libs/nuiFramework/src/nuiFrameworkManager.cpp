@@ -444,7 +444,11 @@ nuiModuleDescriptor *nuiFrameworkManager::createPipeline(std::string &pipelineNa
 	newModuleDescriptor->setName(newPipelineName);
 	newModuleDescriptor->setAuthor("native");
 	newModuleDescriptor->setDescription("New Module");
-	nuiFactory::getInstance()->createPipeline(newModuleDescriptor);
+	nuiModule* newPipeline = nuiFactory::getInstance()->createPipeline(newModuleDescriptor);
+	if(newPipeline != NULL) {
+		// do the treeness here
+	}
+
 	return newModuleDescriptor;
 }
 
@@ -843,7 +847,7 @@ nuiFrameworkManagerErrorCode nuiFrameworkManager::deletePipeline(std::string &pi
 		{
 			for (std::map<int,nuiModule*>::iterator iter = currentPipeline->modules.begin();  iter != currentPipeline->modules.end();iter++)
 			{
-				nuiModuleDescriptor* childDescriptor = nuiFactory::getInstance()->getDescriptor(iter->second->getName());
+				nuiModuleDescriptor* childDescriptor = nuiFactory::getInstance()->getDescriptor("nui" + iter->second->getName() + "Module");
 				if (childDescriptor->getChildModulesCount() > 0)
 				{
 					stack->push_back((nuiPipelineModule*)iter->second);
